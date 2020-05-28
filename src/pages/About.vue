@@ -17,9 +17,7 @@
 <script>
 
 export default {
-  components: {
 
-  },
   metaInfo: {
     title: 'About'
   }
