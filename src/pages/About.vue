@@ -16,7 +16,7 @@
 
 <page-query>
   query {
-    section (path:"/content/sections/about/") {
+    section (path:"/content/section/about/") {
       title
       intro
       team {
