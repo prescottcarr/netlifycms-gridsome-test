@@ -1,0 +1,7 @@
+title: Location 1
+intro: These are our locations
+locations:
+  - name: One
+    address: Onne
+  - name: Two
+    address: Two
