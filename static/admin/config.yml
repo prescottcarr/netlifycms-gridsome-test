@@ -21,3 +21,5 @@ collections:
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "SC Test", name: "sc", widget: "boolean", default: true}
+      
