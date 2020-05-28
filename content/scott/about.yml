@@ -3,4 +3,7 @@ intro: This page is about us 2
 team:
   - name: John Doe
     position: Sales
-    photo: /images/uploads/sun-3713835_1920.jpg
+    photo: /images/uploads/remax_logo_square.png
+  - name: Jane Doe
+    position: Marketing
+    photo: /images/uploads/sothebys_cayman_logo.png
