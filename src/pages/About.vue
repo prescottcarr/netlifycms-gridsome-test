@@ -1,22 +1,16 @@
 <template>
   <Layout :show-logo="false">
 
-    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-      <h2>{{ edge.node.title }}</h2>
-    </div>
+    <h1>{{ $page.about.title }}</h1>
 
   </Layout>
 </template>
 
+
 <page-query>
-query {
-  posts: allScott {
-    edges {
-      node {
-        id
-        title
-      }
-    }
+query ($id: ID!) {
+  about(id: $id) {
+    title
   }
 }
 </page-query>
