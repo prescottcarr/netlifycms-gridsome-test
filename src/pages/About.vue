@@ -9,12 +9,12 @@
 
 <page-query>
   query {
-    scott (id: "334e01214a76ac47cfc1f8dbcd39d1f9")  {
-          title
-          team {
-            name
-          }
-        }
+    scott (path: "/content/scott/about/")  {
+      title
+      team {
+        name
+      }
+    }
   }
 </page-query>
 
