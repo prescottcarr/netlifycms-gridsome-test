@@ -1,10 +1,10 @@
 <template>
   <Layout :show-logo="false">
 
-    <h1>{{ $page.scott.title }}</h1>
-    <p>{{ $page.scott.intro }}</p>
+    <h1>{{ $page.section.title }}</h1>
+    <p>{{ $page.section.intro }}</p>
 
-    <div v-for="person in $page.scott.team">
+    <div v-for="person in $page.section.team">
       <h3>{{ person.name }}</h3>
       <p>{{ person.position }}</p>
       <g-image :src="person.photo" width="100" height="100" fit="contain"/>
@@ -16,7 +16,7 @@
 
 <page-query>
   query {
-    scott (path:"/content/scott/about/") {
+    section (path:"/content/sections/about/") {
       title
       intro
       team {
