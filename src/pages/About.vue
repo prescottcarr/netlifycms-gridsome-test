@@ -1,26 +1,18 @@
 <template>
   <Layout :show-logo="false">
 
-    <div v-for="edge in $page.posts.edges" :key="edge.node.id">
-      <h2>{{ edge.node.title }}</h2>
-    </div>
-
+    <div v-html="$static.post.title" />
 
   </Layout>
 </template>
 
-<page-query>
-query {
-  posts: allPost {
-    edges {
-      node {
-        id
-        title
-      }
+<static-query>
+  query {
+    post {
+      title
     }
   }
-}
-</page-query>
+</static-query>
 
 <script>
 
