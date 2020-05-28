@@ -10,7 +10,7 @@ collections:
     files:
       - label: "About Page"
         name: "about"
-        file: "content/scott/about.yml"
+        file: "content/sections/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
@@ -23,7 +23,7 @@ collections:
               - {label: Photo, name: photo, widget: image}
       - label: "Locations Page"
         name: "locations"
-        file: "content/scott/locations.yml"
+        file: "content/sections/locations.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
