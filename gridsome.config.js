@@ -34,8 +34,8 @@ module.exports = {
       // Create posts from markdown files
       use: '@gridsome/source-filesystem',
       options: {
-        typeName: 'Page',
-        path: 'content/pages/*.yml'
+        typeName: 'Scott',
+        path: 'content/scott/*.yml'
       }
     }
 

@@ -10,7 +10,7 @@
 
 <page-query>
 query {
-  posts: allPage {
+  posts: allScott {
     edges {
       node {
         id
