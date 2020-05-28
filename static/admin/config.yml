@@ -33,7 +33,7 @@ collections:
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Address, name: address, widget: string}
-              
+
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
@@ -50,5 +50,5 @@ collections:
         field: {label: Name, name: name, widget: string, default: "tag"}
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", hint: 'Helper text hint.'}
       - {label: "SC Test", name: "sc", widget: "boolean", default: true}
