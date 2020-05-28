@@ -7,10 +7,8 @@
     <div v-for="person in $page.scott.team">
       <h3>{{ person.name }}</h3>
       <p>{{ person.position }}</p>
-      <g-image :src="person.photo" />
+      <g-image :src="person.photo" width="100" height="100" fit="contain"/>
     </div>
-
-
 
   </Layout>
 </template>
@@ -19,7 +17,6 @@
 <page-query>
   query {
     scott (path:"/content/scott/about/") {
-
       title
       intro
       team {
