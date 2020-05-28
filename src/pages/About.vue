@@ -1,14 +1,14 @@
 <template>
   <Layout :show-logo="false">
 
-    <div v-html="$static.post.title" />
+    <div v-html="$static.page.title" />
 
   </Layout>
 </template>
 
 <static-query>
-  query {
-    post {
+  query ($id: ID!) {
+    page(id: $id) {
       title
     }
   }
