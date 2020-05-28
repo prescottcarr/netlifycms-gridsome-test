@@ -8,11 +8,14 @@
 
 
 <page-query>
-query ($id: ID!) {
-  scott(id: $id) {
-    title
+  query {
+    scott (id: "334e01214a76ac47cfc1f8dbcd39d1f9")  {
+          title
+          team {
+            name
+          }
+        }
   }
-}
 </page-query>
 
 <script>
