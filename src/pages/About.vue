@@ -7,8 +7,8 @@
 </template>
 
 <static-query>
-  query ($id: ID!) {
-    post(id: $id) {
+  query  {
+    page {
       title
     }
   }
