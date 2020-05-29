@@ -1,5 +1,5 @@
 <template>
-  <Layout :show-logo="false">
+  <Layout>
 
     <div class="relative bg-white overflow-hidden">
       <div class="max-w-screen-xl mx-auto ">
@@ -16,7 +16,7 @@
                     <img class="h-8 w-auto sm:h-10" src="/images/uploads/workflow-mark-on-white.svg" alt="" />
                   </a>
                   <div class="-mr-2 flex items-center md:hidden">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                    <button @click="subMenuOpen = !subMenuOpen" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                       <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                       </svg>
@@ -44,7 +44,7 @@
               From: "opacity-100 scale-100"
               To: "opacity-0 scale-95"
           -->
-          <div class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
+          <div v-show="subMenuOpen" class="absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden">
             <div class="rounded-lg shadow-md">
               <div class="rounded-lg bg-white shadow-xs overflow-hidden">
                 <div class="px-5 pt-4 flex items-center justify-between">
@@ -52,7 +52,7 @@
                     <img class="h-8 w-auto" src="/images/uploads/workflow-mark-on-white.svg" alt="" />
                   </div>
                   <div class="-mr-2">
-                    <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
+                    <button @click="subMenuOpen = false" type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
                       <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
                       </svg>
@@ -299,6 +299,9 @@ import Author from '~/components/Author.vue'
 import PostCard from '~/components/PostCard.vue'
 
 export default {
+  data: () => ({
+    subMenuOpen: false,
+  }),
   components: {
     Author,
     PostCard
