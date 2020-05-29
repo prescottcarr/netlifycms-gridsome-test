@@ -1,18 +1,18 @@
 <template>
-  <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
-    <div class="post-card__header">
-      <g-image alt="Cover image" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
+
+  <div class="max-w-sm rounded overflow-hidden shadow-lg">
+    <g-image alt="Cover image" v-if="post.cover_image" class="w-full" :src="post.cover_image"/>
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2" v-html="post.title"></div>
+      <p class="text-gray-700 text-base" v-html="post.description"></p>
     </div>
-    <div class="post-card__content">
-      <h2 class="post-card__title" v-html="post.title" />
-      <p class="post-card__description" v-html="post.description" />
-
-      <PostMeta class="post-card__meta" :post="post" />
-      <PostTags class="post-card__tags" :post="post" />
-
-      <g-link class="post-card__link" :to="post.path">Link</g-link>
+    <div class="px-6 py-4">
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#photography</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">#travel</span>
+      <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">#winter</span>
     </div>
   </div>
+
 </template>
 
 <script>
@@ -28,52 +28,6 @@ export default {
 }
 </script>
 
-<style lang="scss">
-.post-card {
-  margin-bottom: var(--space);
-  position: relative;
+<style>
 
-  &__header {
-    margin-left: calc(var(--space) * -1);
-    margin-right: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    margin-top: calc(var(--space) * -1);
-    overflow: hidden;
-    border-radius: var(--radius) var(--radius) 0 0;
-
-    &:empty {
-      display: none;
-    }
-  }
-
-  &__image {
-    min-width: 100%;
-  }
-
-  &__title {
-    margin-top: 0;
-  }
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 1px 10px 30px 0 rgba(0,0,0,.1);
-  }
-
-  &__tags {
-    z-index: 1;
-    position: relative;
-  }
-
-  &__link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.0;
-    overflow: hidden;
-    text-indent: -9999px;
-    z-index: 0;
-  }
-}
 </style>
