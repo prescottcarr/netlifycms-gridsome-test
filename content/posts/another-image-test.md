@@ -6,7 +6,8 @@ tags:
   - markdown
   - image
   - test
-cover_image: /images/uploads/sun-3713835_1920.jpg
+cover_image: /images/uploads/sothebys-camden-house.jpg
 description: I am trying some image uploads.
+sc: true
 ---
 And I also write something down.
