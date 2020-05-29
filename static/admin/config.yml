@@ -8,7 +8,7 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "About Page"
+      - label: "About"
         name: "about"
         file: "content/section/about.yml"
         fields:
@@ -21,7 +21,7 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Locations Page"
+      - label: "Locations"
         name: "locations"
         file: "content/section/locations.yml"
         fields:

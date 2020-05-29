@@ -1,6 +1,6 @@
 <template>
 
-  <g-link :to="post.path" class="max-w-sm rounded overflow-hidden shadow-lg">
+  <g-link :to="post.path" class="max-w-sm rounded-lg overflow-hidden shadow-xl">
     <g-image alt="Cover image" v-if="post.cover_image" class="w-full" :src="post.cover_image"/>
     <div class="px-6 py-4">
       <div class="font-bold text-xl mb-2" v-html="post.title"></div>

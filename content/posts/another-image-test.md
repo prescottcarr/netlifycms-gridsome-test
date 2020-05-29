@@ -7,7 +7,8 @@ tags:
   - image
   - test
 cover_image: /images/uploads/sothebys-camden-house.jpg
-description: I am trying some image uploads.
+description: Markdown is intended to be as easy-to-read and easy-to-write as is
+  feasible. Readability, however, is emphasized above all else.
 sc: true
 ---
 And I also write something down.
