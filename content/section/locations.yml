@@ -1,6 +1,8 @@
 title: Location
 intro: These are our locations
 short: Get in touch. We'd love to hear from you.
+phone: (345) 949-0734
+email: chris.hew@hews-janitorial.com
 hours: |-
   Monday – Friday\
   8:00am – 5:00pm
@@ -9,4 +11,9 @@ hours: |-
   8:00am – 12:00pm
 locations:
   - name: Walkers Road Plant
-    address: PO Box 291 490 Walkers Road Grand Cayman, Cayman Islands KY1-1104
+    address: |-
+      PO Box 291
+
+       490 Walkers Road 
+
+      Grand Cayman, Cayman Islands KY1-1104
