@@ -12,7 +12,7 @@ export default function (Vue, { router, head, isClient }) {
 
   Vue.use(VueGoogleMaps, {
     load: {
-      key: 'AIzaSyCGRG6k8vex6Zru7xujl2LdOjjytDVpFq8',
+      key: 'AIzaSyDZ9QZCndrFv_Y9DILD_DFaQ9Eaqgny8nE',
       libraries: 'places', // This is required if you use the Autocomplete plugin
       // OR: libraries: 'places,drawing'
       // OR: libraries: 'places,drawing,visualization'
@@ -40,5 +40,5 @@ export default function (Vue, { router, head, isClient }) {
     rel: 'stylesheet',
     href: 'https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap'
   })
-  
+
 }
