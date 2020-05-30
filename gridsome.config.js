@@ -5,6 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
+  chainWebpack (config, { isServer }) {
+    if (isServer) {
+      config.externals([/^(vue|vue-router|vue-meta)$/])
+    }
+  },
   siteName: 'Netlify CMS Test',
   siteDescription: 'Test meta description.',
 
