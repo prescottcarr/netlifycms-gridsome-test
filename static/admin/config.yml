@@ -23,14 +23,13 @@ collections:
               - {label: Photo, name: photo, widget: image}
       - label: "Contact"
         name: "contact"
-        file: "content/section/locations.yml"
+        file: "content/section/contact.yml"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Short Description, name: short, widget: markdown}
           - {label: Phone, name: phone, widget: string}
           - {label: Email, name: email, widget: string}
           - {label: Hours, name: hours, widget: markdown}
-          - {label: Map, name: map, widget: map}
           - {label: Address, name: address1, widget: string}
           - {label: Address 2, name: address2, widget: string}
           - {label: District, name: district, widget: string}
