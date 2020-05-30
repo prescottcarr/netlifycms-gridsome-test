@@ -4,10 +4,18 @@
     <h1>{{ $page.section.title }}</h1>
     <p>{{ $page.section.short}}</p>
 
-    <div v-for="person in $page.section.locations">
-      <h3>{{ person.name }}</h3>
-      <p>{{ person.address }}</p>
-    </div>
+
+    <div>{{ $page.section.hours}}</div>
+    <p>{{ $page.section.map.coordinates}}</p>
+    <p>{{ $page.section.phone}}</p>
+    <p>{{ $page.section.email}}</p>
+    <p>{{ $page.section.address1}}</p>
+    <p>{{ $page.section.address2}}</p>
+    <p>{{ $page.section.district}}</p>
+    <p>{{ $page.section.island}}</p>
+    <p>{{ $page.section.country}}</p>
+    <p>{{ $page.section.postal}}</p>
+
 
   </Layout>
 </template>
@@ -17,11 +25,19 @@
   query {
     section (path:"/content/section/locations/") {
       title
-      intro
-      locations {
-        name
-        address
+      short
+      hours
+      map {
+        coordinates
       }
+      phone
+      email
+      address1
+      address2
+      district
+      island
+      country
+      postal
     }
   }
 </page-query>
