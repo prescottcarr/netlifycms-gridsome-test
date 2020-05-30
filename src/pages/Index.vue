@@ -205,8 +205,8 @@
     </section>
 
     <!-- List posts -->
-    <section class="pb-20 max-w-screen-xl mt-12 mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 mb-16">
+    <section class="pb-20 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 md:col-gap-8 md:row-gap-10 mb-16">
         <PostCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
       </div>
     </section>

@@ -21,12 +21,13 @@ collections:
               - {label: Name, name: name, widget: string}
               - {label: Position, name: position, widget: string}
               - {label: Photo, name: photo, widget: image}
-      - label: "Locations"
-        name: "locations"
+      - label: "Contact"
+        name: "contact"
         file: "content/section/locations.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
+          - {label: Short Description, name: short, widget: markdown}
+          - {label: Hours, name: hours, widget: markdown}
           - label: Locations
             name: locations
             widget: list
