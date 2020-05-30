@@ -30,14 +30,14 @@ collections:
           - {label: Phone, name: phone, widget: string}
           - {label: Email, name: email, widget: string}
           - {label: Hours, name: hours, widget: markdown}
-          - {label: Map, name: map, widget: map}
+          - {label: Map, name: map, default: [-79.9189711,19.696284], widget: map}
           - label: Locations
             name: locations
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
-              - {label: Address, name: address, widget: markdown}
               - {label: 'Map', name: 'map', widget: 'map'}
+              - {label: Address, name: address, widget: markdown}
 
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
