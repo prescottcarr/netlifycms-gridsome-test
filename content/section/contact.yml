@@ -1,4 +1,4 @@
-postal: "10594"
+postal: "105941"
 intro: These are our locations
 title: Location
 short: Get in touch. We'd love to hear from you.
@@ -10,12 +10,12 @@ hours: |-
 
   Saturday\
   8:00am – 12:00pm
-map: '{"type":"Point","coordinates":[-81.3676803,19.2985044]}'
 address1: 335 Dorcy Drive
 address2: Industrial Park
 district: George Town
 island: Grand Cayman
 country: Cayman Islands
+map: '{"type":"Point","coordinates":[-81.3676803,19.2985044]}'
 locations:
   - name: Walkers Road Plant
     address: |-
