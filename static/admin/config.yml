@@ -31,14 +31,12 @@ collections:
           - {label: Email, name: email, widget: string}
           - {label: Hours, name: hours, widget: markdown}
           - {label: Map, name: map, default: '-79.9189711,19.696284', widget: map}
-          - label: Locations
-            name: locations
-            widget: list
-            fields:
-              - {label: Name, name: name, widget: string}
-              - {label: 'Map', name: 'map', widget: 'map'}
-              - {label: Address, name: address, widget: markdown}
-
+          - {label: Address, name: address1, widget: string}
+          - {label: Address 2, name: address2, widget: string}
+          - {label: District, name: district, widget: string}
+          - {label: Island, name: island, widget: string}
+          - {label: Country, name: country, widget: string}
+          - {label: Postal Code, name: postal, widget: string}
   - name: "posts" # Used in routes, e.g., /admin/collections/blog
     label: "Posts" # Used in the UI
     folder: "content/posts" # The path to the folder where the documents are stored
