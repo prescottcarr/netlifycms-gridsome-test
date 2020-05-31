@@ -39,9 +39,14 @@ module.exports = {
 
       options: {
 
-        purgeConfig: {},
+        purgeConfig: {
+          // These options are passed through directly to PurgeCSS
+          options: {
+            whitelist: ['vue-map-container', 'vue-map', 'vue-map-hidden'],
+          }
+        },
         presetEnvConfig: {},
-        shouldPurge: false,
+        shouldPurge: true,
         shouldImport: true,
         shouldTimeTravel: true
       }
