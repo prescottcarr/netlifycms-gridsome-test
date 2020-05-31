@@ -36,13 +36,10 @@ module.exports = {
     },
     {
       use: 'gridsome-plugin-tailwindcss',
-
       options: {
-
         purgeConfig: {
           // These options are passed through directly to PurgeCSS
           whitelist: ['vue-map-container', 'vue-map', 'vue-map-hidden']
-
         },
         presetEnvConfig: {},
         shouldPurge: true,
