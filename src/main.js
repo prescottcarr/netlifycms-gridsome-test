@@ -12,7 +12,7 @@ export default function (Vue, { router, head, isClient }) {
 
   Vue.use(VueGoogleMaps, {
     load: {
-      key: process.env.MAP_KEY,
+      key: 'AIzaSyDZ9QZCndrFv_Y9DILD_DFaQ9Eaqgny8nE',
       libraries: 'places', // This is required if you use the Autocomplete plugin
       // OR: libraries: 'places,drawing'
       // OR: libraries: 'places,drawing,visualization'
