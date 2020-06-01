@@ -6,22 +6,22 @@
       </div>
       <div class="hero-text">
         <h1 class="text-5xl font-bold mb-2 text-white">{{ $page.section.title }}</h1>
-        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.short}}</p>
+        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.short }}</p>
       </div>
     </div>
     <div class="container mx-auto px-4">
 
       <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div class="contact-box">
-          <p>{{ $page.section.hours}}</p>
-          <p>{{ $page.section.phone}}</p>
-          <p>{{ $page.section.email}}</p>
-          <p>{{ $page.section.address1}}</p>
-          <p>{{ $page.section.address2}}</p>
-          <p>{{ $page.section.district}}</p>
-          <p>{{ $page.section.island}}</p>
-          <p>{{ $page.section.country}}</p>
-          <p>{{ $page.section.postal}}</p>
+          <p v-html="$page.section.hours"></p>
+          <p>{{ $page.section.phone }}</p>
+          <p>{{ $page.section.email }}</p>
+          <p>{{ $page.section.address1 }}</p>
+          <p>{{ $page.section.address2 }}</p>
+          <p>{{ $page.section.district }}</p>
+          <p>{{ $page.section.island }}</p>
+          <p>{{ $page.section.country }}</p>
+          <p>{{ $page.section.postal }}</p>
         </div>
 
         <div class="contact-box">
