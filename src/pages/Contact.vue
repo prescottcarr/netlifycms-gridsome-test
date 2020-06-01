@@ -13,7 +13,7 @@
 
       <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div class="contact-box">
-          <p v-html="$page.section.body"></p>
+          <p v-html="$page.section.hours"></p>
           <p>{{ $page.section.phone }}</p>
           <p>{{ $page.section.email }}</p>
           <p>{{ $page.section.address1 }}</p>
@@ -51,7 +51,7 @@
       title
       photo
       short
-      body
+      hours
       phone
       email
       address1
