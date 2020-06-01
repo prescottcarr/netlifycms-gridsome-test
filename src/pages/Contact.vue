@@ -6,7 +6,7 @@
       </div>
       <div class="hero-text">
         <h1 class="text-5xl font-bold mb-2 text-white">{{ $page.section.title }}</h1>
-        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.body}}</p>
+        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.short}}</p>
       </div>
     </div>
     <div class="container mx-auto px-4">
@@ -50,7 +50,7 @@
     section (path:"/content/section/contact/") {
       title
       photo
-      body
+      short
       hours
       phone
       email
