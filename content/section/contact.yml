@@ -1,3 +1,9 @@
+body: |-
+  Test
+
+  <https://www.netlifycms.org/docs/widgets/#markdown>
+
+  Test
 postal: "105941"
 intro: These are our locations
 title: Location
@@ -5,12 +11,6 @@ photo: /images/uploads/about_hews.jpg
 short: Get in touch. We'd love to hear from you.
 phone: (345) 949-0734
 email: chris.hew@hews-janitorial.com
-body: |-
-  Monday – Friday\
-  8:00am – 5:00pm
-
-  Saturday\
-  8:00am – 12:00pm
 address1: 335 Dorcy Drive
 address2: Industrial Park
 district: George Town
