@@ -2,7 +2,7 @@
   <Layout>
     <div class="hero-image">
       <div class="hero-image__container">
-        <g-image :src="$page.section.photo">
+        <g-image :src="$page.section.photo"/>
       </div>
       <div class="hero-text">
         <h1 class="text-5xl font-bold mb-2 text-white">{{ $page.section.title }}</h1>
@@ -49,6 +49,7 @@
   query {
     section (path:"/content/section/contact/") {
       title
+      photo
       short
       hours
       phone
