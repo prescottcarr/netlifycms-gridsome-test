@@ -6,13 +6,13 @@
       </div>
       <div class="hero-text">
         <h1 class="text-5xl font-bold mb-2 text-white">{{ $page.section.title }}</h1>
-        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.short}}</p>
+        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.body}}</p>
       </div>
     </div>
     <div class="container mx-auto px-4">
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        <div>
+      <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div class="contact-box">
           <p>{{ $page.section.hours}}</p>
           <p>{{ $page.section.phone}}</p>
           <p>{{ $page.section.email}}</p>
@@ -24,7 +24,7 @@
           <p>{{ $page.section.postal}}</p>
         </div>
 
-        <div>
+        <div class="contact-box">
           <GmapMap
           :center="{lat:19.2985383, lng:-81.3676755}"
           :zoom="13"
@@ -50,7 +50,7 @@
     section (path:"/content/section/contact/") {
       title
       photo
-      short
+      body
       hours
       phone
       email
@@ -131,6 +131,21 @@ export default {
   height: 100%;
   align-items: center;
   z-index: 1;
+}
+
+.contact {
+  top: -50px;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 32px 40px;
+  background-color: #fff;
+  border: 1px solid #eaf0f6;
+  z-index: 2;
 }
 
 </style>
