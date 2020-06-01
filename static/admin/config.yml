@@ -27,6 +27,7 @@ collections:
         file: "content/section/contact.yml"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: Photo, name: photo, widget: image}
           - {label: Short Description, name: short, widget: markdown}
           - {label: Phone, name: phone, widget: string}
           - {label: Email, name: email, widget: string}

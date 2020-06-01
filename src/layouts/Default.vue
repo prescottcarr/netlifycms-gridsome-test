@@ -53,7 +53,7 @@
       </nav>
     </header>
 
-    <main class="main">
+    <main class="main flex-grow">
       <slot/>
     </main>
 
@@ -133,4 +133,9 @@ export default {
 
 <style>
 
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 </style>
