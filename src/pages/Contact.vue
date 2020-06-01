@@ -29,7 +29,7 @@
           :center="{lat:19.2985383, lng:-81.3676755}"
           :zoom="13"
           map-type-id="roadmap"
-          style="width: 400px; height: 250px"
+          style="width: 100%; height: 250px"
           >
           <GmapMarker
           :position="{lat:19.2985383, lng:-81.3676755}"
