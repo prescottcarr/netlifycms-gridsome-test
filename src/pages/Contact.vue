@@ -11,7 +11,7 @@
     </div>
     <div class="container mx-auto px-4">
 
-      <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div class="contact-box">
           <p v-html="$page.section.body"></p>
           <p>{{ $page.section.phone }}</p>
