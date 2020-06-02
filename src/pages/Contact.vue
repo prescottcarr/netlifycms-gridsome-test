@@ -13,7 +13,7 @@
 
       <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div class="contact-box">
-          <p v-html="$page.section.hours"></p>
+          <vue-markdown>{{ $page.section.hours }}</vue-markdown>
           <p>{{ $page.section.phone }}</p>
           <p>{{ $page.section.email }}</p>
           <p>{{ $page.section.address1 }}</p>
@@ -65,11 +65,15 @@
 </page-query>
 
 <script>
+import VueMarkdown from 'vue-markdown'
 
 export default {
 
   metaInfo: {
     title: 'Contact Us'
+  },
+  components: {
+    VueMarkdown
   },
   methods: {
     websiteUrl: function(event) {
