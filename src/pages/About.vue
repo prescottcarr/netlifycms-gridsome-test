@@ -1,9 +1,8 @@
 <template>
-  <Layout :show-logo="false">
+  <Layout>
 
     <h1>{{ $page.section.title }}</h1>
-    <p>{{ $page.section.intro }}</p>
-
+    <vue-markdown>{{ $page.section.intro }}</vue-markdown>
     <div v-for="person in $page.section.team">
       <h3>{{ person.name }}</h3>
       <p>{{ person.position }}</p>
@@ -12,7 +11,6 @@
 
   </Layout>
 </template>
-
 
 <page-query>
   query {
@@ -29,9 +27,12 @@
 </page-query>
 
 <script>
+import VueMarkdown from 'vue-markdown'
 
 export default {
-
+  components: {
+    VueMarkdown
+  },
   metaInfo: {
     title: 'About'
   }

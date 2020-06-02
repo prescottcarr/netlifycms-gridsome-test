@@ -62,8 +62,6 @@
       <slot/>
     </main>
 
-
-
     <footer class="bg-gray-800 text-white">
       <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
         <div class="mb-8 lg:mb-0">
@@ -115,20 +113,11 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import ToggleTheme from '~/components/ToggleTheme.vue'
 
 export default {
   data: () => ({
     menuOpen: false,
-  }),
-  props: {
-    showLogo: { default: true }
-  },
-  components: {
-    Logo,
-    ToggleTheme
-  }
+  })
 }
 </script>
 

@@ -4,13 +4,12 @@
       <div class="hero-image__container">
         <g-image :src="$page.section.photo"/>
       </div>
-      <div class="hero-text">
+      <div class="hero-text px-4">
         <h1 class="text-5xl font-bold mb-2 text-white">{{ $page.section.title }}</h1>
-        <p class="text-2xl mb-8 text-gray-200">{{ $page.section.short }}</p>
+        <vue-markdown class="text-2xl mb-8 text-gray-200">{{ $page.section.short }}</vue-markdown>
       </div>
     </div>
     <div class="container mx-auto px-4">
-
       <div class="contact relative grid grid-cols-1 sm:grid-cols-2 gap-10">
         <div class="contact-box">
           <vue-markdown>{{ $page.section.hours }}</vue-markdown>
