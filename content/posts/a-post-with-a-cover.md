@@ -5,7 +5,7 @@ published: true
 tags:
   - Markdown
   - Cover Image
-cover_image: /images/uploads/sothebys-camden-house.jpg
+cover_image: /images/uploads/maria-oswalt-qfkvfe9_d38-unsplash.jpg
 description: Markdown is intended to be as easy-to-read and easy-to-write as is
   feasible. Readability, however, is emphasized above all else.
 sc: true
