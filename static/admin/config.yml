@@ -44,7 +44,7 @@ collections:
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     path: '{{slug}}/index'
-    media_folder: './{{filename}}.{{extension}}'
+    media_folder: ''
     public_folder: ''
     preview_path: "{{slug}}"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -56,7 +56,7 @@ collections:
       - label: "Tags"
         name: "tags"
         widget: "list"
-        field: {label: Name, name: name, widget: string, default: "tag"}
+        field: {label: Name, name: name, widget: string, required: false}
       - {label: "Cover Image", name: "cover_image", widget: "image", required: false}
       - {label: "Description", name: "description", widget: "markdown"}
       - {label: "Body", name: "body", widget: "markdown", hint: 'Helper text hint.'}
