@@ -44,7 +44,7 @@ collections:
     folder: "content/posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     path: '{{slug}}/index'
-    media_folder: ''
+    media_folder: './{{filename}}.{{extension}}'
     public_folder: ''
     preview_path: "{{slug}}"
     slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
