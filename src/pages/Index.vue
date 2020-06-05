@@ -173,7 +173,7 @@
                 <div class="ml-4">
                   <h5 class="text-lg leading-6 font-medium text-gray-900">Objectives</h5>
                   <p class="mt-2 text-base leading-6 text-gray-600">
-                    Raise awareness about the importance of good literacy skills and high quality education using LIFE’s brand and resources.
+                    Test Raise awareness about the importance of good literacy skills and high quality education using LIFE’s brand and resources.
                   </p>
                 </div>
               </div>
