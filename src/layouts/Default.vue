@@ -21,9 +21,9 @@
           <nav class="hidden md:flex space-x-10">
 
 
-            <a href="#" class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
+            <g-link to="/about/" class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               About
-            </a>
+            </g-link>
 
             <a href="#" class="text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150">
               Literacy
@@ -45,9 +45,9 @@
 
           </nav>
           <div class="hidden md:flex items-center justify-end space-x-8 md:flex-1 lg:w-0">
-            <a href="#" class="whitespace-no-wrap text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900">
+            <g-link to="/contact/" class="whitespace-no-wrap text-base leading-6 font-medium text-gray-700 hover:text-gray-900 focus:outline-none focus:text-gray-900">
               Contact
-            </a>
+            </g-link>
             <span class="inline-flex rounded-md shadow-sm">
               <a href="#" class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-life-orange hover:bg-indigo-500 focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700 transition ease-in-out duration-150">
                 Donate
