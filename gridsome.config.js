@@ -35,6 +35,22 @@ module.exports = {
       }
     },
     {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Events',
+        path: 'content/events/**/*.md'
+      }
+    },
+    {
+      // Create posts from markdown files
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Programmes',
+        path: 'content/programmes/**/*.md'
+      }
+    },
+    {
       use: 'gridsome-plugin-tailwindcss',
       options: {
         purgeConfig: {
@@ -57,6 +73,12 @@ module.exports = {
     }
 
   ],
+
+  templates: {
+    Post: '/blog/:title',
+    Programmes: '/programmes/:title',
+    Events: '/events/:title'
+  },
 
   transformers: {
     //Add markdown support to all file-system sources
